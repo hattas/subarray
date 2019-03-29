@@ -40,10 +40,8 @@ def main():
             try:
                 get_full_data(ts, symbol).to_csv(filename)
             except KeyError as err:
-                if 'Daily' in str(err):
-                    print('Alpha Vantage daily API request limit reached (500)')
-                    print('exiting for loop...')
-                    break
+                print('KeyError for symbol', symbol)
+                print('continuing loop...')
             num_requests += 1
     
     print(f'DONE. {num_requests:d} requests completed')
