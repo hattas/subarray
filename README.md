@@ -8,11 +8,16 @@ Project for COEN 4650 Introduction to Algorithms, Spring 2019
 * [John Hattas](https://github.com/hattas)
 * [Nathan Lang](https://github.com/Nathanlang14)
 
+### Data
+The [alpha_vantage](https://pypi.org/project/alpha_vantage/) Python package is used for getting historical stock data.<br>
+You must have an Alpha Vantage API key in key.txt. Get one [here](https://www.alphavantage.co/support/#api-key).
+
 ### Files
 use `from <file> import *` to use functions inside the files
 
-**algs.py**: Functions to compute max subarray<br>
-**data.py**: Functions for getting and processing stock data
+**[algs.py](algs.py)**: Functions to compute max subarray<br>
+**[data.py](data.py)**: Functions for getting and processing stock data<br>
+**[download_data.py](download_data.py)** Script to download full stock history of S&P 500 companies.  Only needs to be run once.
 
 ### Deliverables
 Item | Due
