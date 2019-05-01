@@ -58,5 +58,18 @@ def find_maximum_subarray_brute_force(A):
                 max_sum = sub_sum
     return (max_i, max_j, max_sum)
 
+def find_maximum_subarray_kadane(A):
+    max_ending_here = A[0]
+    startOld = start = end = max_so_far = 0
+    for i, x in enumerate(A[1:], 1):
+        max_ending_here = max(x, max_ending_here + x)
+        max_so_far = max(max_so_far, max_ending_here)
+        if max_ending_here < 0:
+            start = i + 1
+        elif max_ending_here == max_so_far:
+            startOld = start
+            end = i
+    return (startOld, end, max_so_far)
+
 def evaluate_correctness(A):
     return find_maximum_subarray(A, return_type=tuple) == find_maximum_subarray_brute_force(A)   

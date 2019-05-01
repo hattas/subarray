@@ -20,8 +20,8 @@ def plot_regions(data, symbol):
         tick.label2On = True
 
     # add highlight box for hold period
-    plt.axvspan(data.index[gain['low']-1], data.index[gain['high']], color='green', alpha=0.1)
-    plt.axvspan(data.index[loss['low']-1], data.index[loss['high']], color='red', alpha=0.1)
+    plt.axvspan(data.index[gain['low']-1], data.index[gain['high']], color='green', alpha=0.2)
+    plt.axvspan(data.index[loss['low']-1], data.index[loss['high']], color='red', alpha=0.2)
     plt.title(f'{symbol}, gain = \${gain["sum"]:.2f}, loss = \${loss["sum"]:.2f}')
 
     plt.savefig('test.svg')
