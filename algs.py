@@ -45,3 +45,18 @@ def find_maximum_subarray(A, low=None, high=None, return_type=dict):
         return (return_low, return_high, return_sum)
     else:
         return {'low':return_low, 'high':return_high, 'sum':return_sum}
+
+def find_maximum_subarray_brute_force(A):
+    max_sum = -np.inf
+    for i in range(len(A)):
+        for j in range(i, len(A)):
+            subarray = A[i:j+1]
+            sub_sum = np.sum(subarray)
+            if sub_sum > max_sum:
+                max_i = i
+                max_j = j
+                max_sum = sub_sum
+    return (max_i, max_j, max_sum)
+
+def evaluate_correctness(A):
+    return find_maximum_subarray(A, return_type=tuple) == find_maximum_subarray_brute_force(A)   
