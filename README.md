@@ -34,14 +34,10 @@ Task | Date | Done
 get stock data | 2/15 | :white_check_mark:
 implement max sub alg | 2/22 | :white_check_mark:
 use alg with stock data | 3/1 | :white_check_mark:
-add date ranges and max subarray length | 3/8 | :x:
-implement multiple buys and sells | 3/22 | :x:
-graphing (highlight hold period) | 3/29 | :x:
-performance metrics | 4/12 | :x:
-analysis on stock market history/fun facts | 4/19 | :x:
-Compile results and prepare project poster | 5/3 | :x:
+add date ranges and max subarray length | 3/8 | :white_check_mark:
+implement multiple buys and sells | 3/22 | :white_check_mark:
+graphing (highlight hold period) | 3/29 | :white_check_mark:
+performance metrics | 4/12 | :white_check_mark:
+analysis on stock market history/fun facts | 4/19 | :white_check_mark:
+Compile results and prepare project poster | 5/3 | :white_check_mark:
 
-### Proposal Feedback
-The relations between the multiple input parameters and the algorithm are somewhat unclear. How will you incorporate the buy/sell fees into the problem?
-
-Your evaluation plan could also use a little more detail. How will you generate test data? How will you be able if the algorithm generated the correct output? By manually performing the computations? Is that approach scalable? Regarding runtime, is timeframe the only parameter that will influence performance?
